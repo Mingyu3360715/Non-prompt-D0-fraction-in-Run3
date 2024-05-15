@@ -1,0 +1,74 @@
+pPb5TeVPrompt:
+    Particle: 'D0'
+    FixSigma: 0
+    SigmaFile: ''
+    SigmaMultFactor: 1.
+    FixMean: 0
+    MeanFile: ''
+#    PtMin: [  1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0,  10.0, 12., 16.]
+    PtMin: [ 3.0]
+    #PtMin: [  1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0,  10.0, 12., 16.]
+    PtMax: [ 4.0]
+#    PtMax: [  2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, 12.,  16., 24.]
+    #PtMax: [  2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, 12.,  16., 24.]
+    #MassMin: [  1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72]
+    MassMin: [  1.72]
+    #MassMax: [  2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03]
+    MassMax: [  2.03]
+    #Rebin: [ 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8 ]
+#    Rebin: [ 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+    Rebin: [ 6]
+    #InclSecPeak: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    InclSecPeak: [ 0]
+    SigmaSecPeak: []
+    SigmaFileSecPeak: ''
+    SigmaMultFactorSecPeak: 1.
+    FixSigmaToFirstPeak: 0
+    UseLikelihood: 1
+    #BkgFunc: [ 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo']
+    #BkgFunc: [ 'kPol2', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kPol2', 'kExpo']
+    BkgFunc: [ 'kPol2', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo']
+    #SgnFunc: [ 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus']
+    SgnFunc: [ 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus']
+    FixSigmaRatio: 0 # used only if SgnFunc = k2GausSigmaRatioPar
+    SigmaRatioFile: ""
+    BoundMean: 0 # 0: Do not set limits on mean range, 1: the mean is set to be between MassMin[i] and MassMax[i]
+    EnableRef: true
+
+pPb5TeVFD:
+    Particle: 'D0'
+    FixSigma: 1
+    SigmaFile: './RawYieldsData_D0_pPb5TeV_Prompt_Central.root'
+    #SigmaFile: '/Users/jon/alice/DmesonAnalysis_new-mod/configfiles/fit/RawYieldsData_D0_pPb5TeV_Prompt_Central_pass1.root'
+    SigmaMultFactor: 1.
+    FixMean: 0
+    MeanFile: ''
+    PtMin: [   0]
+    #PtMin: [   1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0,  10.0, 12., 16.]
+    PtMax: [   1.0]
+    #PtMax: [   2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, 12.,  16., 24.]
+    #MassMin: [  1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72, 1.72]
+    MassMin: [  1.74]
+    #MassMax: [  2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03, 2.03]
+    MassMax: [  2.0]
+    #Rebin: [ 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+#    Rebin: [ 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+    Rebin: [ 1]
+    #InclSecPeak: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+    InclSecPeak: [ 0]
+    SigmaSecPeak: []
+    SigmaFileSecPeak: ''
+    SigmaMultFactorSecPeak: 1.
+    FixSigmaToFirstPeak: 0
+    UseLikelihood: 1
+    #BkgFunc: [ 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo']
+#    BkgFunc: [ 'kPol2', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo', 'kExpo']
+    BkgFunc: [ 'kPol3']
+    #SgnFunc: [ 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus']
+#    SgnFunc: [ 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus', 'kGaus']
+    SgnFunc: [ 'kGaus']
+    FixSigmaRatio: 0 # used only if SgnFunc = k2GausSigmaRatioPar
+    SigmaRatioFile: ""
+    BoundMean: 0 # 0: Do not set limits on mean range, 1: the mean is set to be between MassMin[i] and MassMax[i]
+    #EnableRef: false
+    EnableRef: true
